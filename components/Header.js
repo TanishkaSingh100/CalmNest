@@ -1,4 +1,6 @@
 // Header Component
+
+const { useState, useEffect, useRef} = React;
 const Header = ({ activePage, setActivePage }) => {
     const navItems = [
         { id: 'chatbot', label: 'Chat Support', icon: '💬' },

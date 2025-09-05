@@ -1,9 +1,9 @@
 // Main App Component
+
+const { useState, useEffect, useRef } = React;
 const App = () => {
     const [activePage, setActivePage] = useState('chatbot');
     const [isLoading, setIsLoading] = useState(true);
-
-    const { useState, useEffect, useRef } = React;
 
     useEffect(() => {
         // Simulate initial loading

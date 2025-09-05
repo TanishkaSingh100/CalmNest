@@ -1,4 +1,6 @@
 // Booking Component
+
+const { useState, useEffect, useRef} = React;
 const Booking = () => {
     const [formData, setFormData] = useState({
         pseudonym: '',

@@ -1,4 +1,6 @@
 // Chatbot Component
+
+const { useState, useEffect, useRef} = React;
 const Chatbot = ({ setActivePage }) => {
     const [messages, setMessages] = useState([
         { id: 1, text: "Hello! I'm here to support you. How are you feeling today?", sender: 'bot', timestamp: new Date() }

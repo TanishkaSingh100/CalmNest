@@ -1,4 +1,6 @@
 // Resources Component
+
+const { useState, useEffect, useRef} = React;
 const ResourceCard = ({ resource }) => {
     const [isExpanded, setIsExpanded] = useState(false);
 

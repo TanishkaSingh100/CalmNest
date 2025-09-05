@@ -1,4 +1,6 @@
 // Admin Dashboard Component
+
+const { useState, useEffect, useRef} = React;
 const StatCard = ({ title, value, icon, trend, trendValue, color = "bg-white" }) => (
     <div className={`${color} rounded-xl shadow-lg p-6 stat-card`}>
         <div className="flex items-center justify-between mb-4">

@@ -1,4 +1,6 @@
 // Peer Support Component
+
+const { useState, useEffect, useRef} = React;
 const PeerSupport = () => {
     const [selectedPost, setSelectedPost] = useState(null);
 
