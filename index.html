@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindEase - Student Mental Health Support</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- React and ReactDOM -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <!-- Babel Standalone -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-calm': '#f0f9ff',
+                        'brand-primary': '#3b82f6',
+                        'brand-secondary': '#eef2ff',
+                        'brand-accent': '#10b981',
+                        'brand-text': '#374151'
+                    },
+                    fontFamily: {
+                        'nunito': ['Nunito', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-calm min-h-screen">
+    <div id="root"></div>
+
+    <!-- Load Components -->
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Chatbot.js"></script>
+    <script type="text/babel" src="components/Booking.js"></script>
+    <script type="text/babel" src="components/Resources.js"></script>
+    <script type="text/babel" src="components/PeerSupport.js"></script>
+    <script type="text/babel" src="components/AdminDashboard.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
